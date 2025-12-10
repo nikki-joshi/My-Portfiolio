@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="next">
+                <nav>
+                    <img src="./mylogo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm <span>Nikki</span><br> Joshi from India</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------------- about------------------ -->
+    <div id="about">
+        <div class="box">
+            <div class="row">
+                <div class="row1">
+                    <img src="./myimg.png">
+                </div>
+                <div class="row2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Hey! I’m Nikki Joshi, a passionate Web Developer and a fresh BCA graduate (2022–2025) with a strong enthusiasm for building modern, efficient, and user-friendly web applications.
+                      I specialize in the MERN stack working with MongoDB, Express, React, and Node.js along with strong fundamentals in HTML, CSS, JavaScript, Java, and basic DSA.
+                      I love crafting clean UI, writing scalable backend logic, and bringing ideas to life through meaningful digital experiences.
+                      I’m also well-versed with Git & GitHub, ensuring smooth workflow, version control, and collaboration.
+                      Currently, I’m seeking an opportunity as a MERN Stack Web Developer, where I can contribute my skills, grow with a dynamic team, and create impactful solutions that make a difference.
+                      Let’s connect and build something amazing together!</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, React, Tailwind.</li>
+                            <li><span>Backend Development</span><br>Node.js, Express</li>
+                            <li><span>Database & Tools</span><br>MongoDB, Git, GitHub</li>
+                            <li><span>Programming & Problem-Solving</span><br>Java, DSA (Basics)</li>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Project-Based Learning</span><br>Built MERN stack and core web projects, gaining practical experience with frontend, backend, and Git workflows.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>BCA (2022–2025)</span><br>Studied programming, web development, databases, and problem-solving fundamentals.</li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Services------------ -->
+     <div id="services">
+        <div class="box">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>I design clean, modern, and responsive website interfaces focused on user experience and visual appeal. I create layouts that look great on all devices and align with the brand’s style.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Frontend Web Development</h2>
+                    <p>I build fast, interactive, and user-friendly websites using HTML, CSS, JavaScript, React, and Tailwind. From components to complete pages, I create smooth and responsive user interfaces.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Backend Development</h2>
+                    <p>I develop secure and efficient backend systems using Node.js and Express. I create REST APIs, handle server logic, and connect applications with databases.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- ----------portfolio--------- -->
+      <div id="portfolio">
+        <div class="box">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img1.jpeg">
+                    <div class="layer">
+                        <h3>Personal Class Schedule Planner — My Timetable App</h3>
+                        <p>A web-based timetable tool I built to help users easily organise and view their class schedule in a clean, intuitive layout.</p>
+                        <a href="https://timetable.khushisahu.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img4.jpeg">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe Game — Interactive Logic Challenge</h3>
+                        <p>A simple yet engaging tic-tac-toe game featuring smooth gameplay and smart win-checking logic, built to showcase my skills in interactive UI and game development.</p>
+                        <a href="https://nikki-joshi.github.io/Tic-Tac-Toe-game/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img5.jpeg">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors — Quick Fun Game</h3>
+                        <p>A lightweight and interactive Rock Paper Scissors game designed to deliver fast, enjoyable play while demonstrating my ability to build responsive, logic-driven web apps..</p>
+                        <a href="https://nikki-joshi.github.io/Rock-Paper-Scissors/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/nikki-joshi" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- ---------------------Contact------------- -->
+    <div id="contact">
+       <div class="box">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>joshinikki238@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7060990634</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nikki-joshi-1250a2251/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/nikki-joshi"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="./My cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Nikki — Designed & Developed with <i class="fa-solid fa-heart"></i> by Me</p>
+        </div>
+       </div>
+       </div>
+    <script src="./app.js"></script>
+</body>
+</html>
